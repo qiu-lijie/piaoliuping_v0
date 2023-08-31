@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
 
     # custom apps
+    'piaoliuping.bottles',
     'piaoliuping.core',
     'piaoliuping.users',
 ]
@@ -141,3 +142,6 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 SITE_ID = 1
+LOGIN_REDIRECT_URL = '/bottles/rand-bottle/'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_SIGNUP_REDIRECT_URL = '/bottles/rand-bottle/'
