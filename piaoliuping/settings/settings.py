@@ -145,3 +145,6 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/bottles/rand-bottle/'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_SIGNUP_REDIRECT_URL = '/bottles/rand-bottle/'
+
+# use console as email
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
